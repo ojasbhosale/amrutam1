@@ -1,0 +1,88 @@
+.search-doctors-container {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+    color: #666;
+  }
+  
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .search-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+  
+  .filter-group {
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-group p {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filter-button {
+    background-color: #f0f0f0;
+    color: #666;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .filter-button.active {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .filter-button:hover {
+    background-color: #e0e0e0;
+  }

@@ -1,0 +1,420 @@
+.about-doctor-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  /* Common styles for all sections */
+  .about-doctor-container > div {
+    background-color: #fdfdf5;
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-doctor-container > div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .about-doctor-container h3 {
+    color: #2f4f2f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  /* Previous sections styles remain unchanged */
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .follow-button {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #2f4f2f;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .follow-button:hover {
+    background-color: rgba(61, 122, 61, 0.08);
+    border-color: #3d7a3d;
+  }
+  
+  .about-text {
+    color: #4a4a4a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more-btn {
+    color: #3d7a3d;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .read-more-btn:hover {
+    text-decoration: underline;
+  }
+  
+  .languages {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .language-label {
+    color: #6e6e6e;
+    font-size: 0.9rem;
+  }
+  
+  .language-tag {
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(61, 122, 61, 0.08);
+    border-radius: 16px;
+    color: #2f4f2f;
+    font-size: 0.9rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2f4f2f;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .social-icon:hover {
+    background-color: rgba(61, 122, 61, 0.08);
+    border-color: #3d7a3d;
+    color: #3d7a3d;
+  }
+  
+  /* Specialties Section */
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .specialty-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .specialty-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(61, 122, 61, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  
+  /* Concerns Section */
+  .concerns-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  
+  .concern-tag {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #2f4f2f;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .concern-tag:hover {
+    background-color: rgba(61, 122, 61, 0.08);
+    border-color: #3d7a3d;
+  }
+  
+  .more-tag {
+    color: #3d7a3d;
+    font-weight: 500;
+  }
+  
+  /* Enhanced Experience Section */
+  .experience-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #2f4f2f;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: rgba(61, 122, 61, 0.04);
+    border-radius: 12px;
+  }
+  
+  .experience-header-icon {
+    color: #3d7a3d;
+  }
+  
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .experience-item {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #3d7a3d;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #3d7a3d;
+    z-index: 1;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 16px;
+    left: 7px;
+    width: 2px;
+    height: calc(100% + 2rem);
+    background-color: rgba(61, 122, 61, 0.2);
+  }
+  
+  .experience-item:last-child .timeline-line {
+    display: none;
+  }
+  
+  .experience-content {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+  }
+  
+  .experience-content:hover {
+    border-color: #3d7a3d;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .experience-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+  }
+  
+  .experience-title h4 {
+    color: #2f4f2f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .experience-period {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3d7a3d;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  .experience-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .role-title {
+    color: #4a4a4a;
+    font-weight: 500;
+  }
+  
+  .experience-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6e6e6e;
+    font-size: 0.9rem;
+  }
+  
+  .experience-achievements {
+    margin-bottom: 1rem;
+  }
+  
+  .experience-achievements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .experience-achievements li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+    font-size: 0.95rem;
+  }
+  
+  .experience-achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #3d7a3d;
+    font-weight: bold;
+  }
+  
+  .experience-patients {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #3d7a3d;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .exp-icon {
+    color: currentColor;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .about-doctor-container {
+      margin: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-doctor-container {
+      margin: 1rem;
+    }
+  
+    .experience-title {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .experience-role {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .specialties-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .concerns-grid {
+      gap: 0.5rem;
+    }
+  
+    .concern-tag {
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-doctor-container {
+      margin: 0.75rem;
+    }
+  
+    .about-doctor-container > div {
+      padding: 1.25rem;
+    }
+  
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .follow-button {
+      width: 100%;
+    }
+  
+    .languages {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .specialties-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .specialty-item {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+  
+    .experience-item {
+      gap: 1rem;
+    }
+  
+    .experience-content {
+      padding: 1rem;
+    }
+  
+    .timeline-marker {
+      display: none;
+    }
+  
+    .experience-achievements li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  

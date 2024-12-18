@@ -1,0 +1,332 @@
+.appointment-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fdfdf5;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .appointment-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Fee Section */
+  .fee-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .fee-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2f4f2f;
+  }
+  
+  .fee-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #3d7a3d;
+  }
+  
+  /* Session Type Selection */
+  .session-section h3 {
+    font-size: 1rem;
+    color: #2f4f2f;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .session-types {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .session-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .session-type:hover {
+    border-color: #3d7a3d;
+    background-color: rgba(61, 122, 61, 0.02);
+  }
+  
+  .session-type.selected {
+    background-color: rgba(61, 122, 61, 0.08);
+    border-color: #3d7a3d;
+  }
+  
+  .session-label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2f4f2f;
+  }
+  
+  .session-duration {
+    font-size: 0.9rem;
+    color: #6e6e6e;
+    margin-top: 0.25rem;
+  }
+  
+  .check-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .check-svg {
+    stroke: #3d7a3d;
+  }
+  
+  /* Date Selection */
+  .date-section h3 {
+    font-size: 1rem;
+    color: #2f4f2f;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .date-slider {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .dates {
+    display: flex;
+    gap: 1rem;
+    flex: 1;
+  }
+  
+  .date-card {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  
+  .date-card:hover {
+    border-color: #3d7a3d;
+    background-color: rgba(61, 122, 61, 0.02);
+  }
+  
+  .date-card.selected {
+    background-color: rgba(61, 122, 61, 0.08);
+    border-color: #3d7a3d;
+  }
+  
+  .date-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .day {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2f4f2f;
+  }
+  
+  .slots {
+    font-size: 0.9rem;
+    color: #6e6e6e;
+  }
+  
+  .nav-button {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: white;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-button:hover {
+    border-color: #3d7a3d;
+    background-color: rgba(61, 122, 61, 0.08);
+  }
+  
+  .nav-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    stroke: #2f4f2f;
+  }
+  
+  /* Time Slots */
+  .time-slots-section {
+    margin-bottom: 2rem;
+  }
+  
+  .time-section {
+    margin-bottom: 1.75rem;
+  }
+  
+  .time-section h4 {
+    font-size: 1rem;
+    color: #2f4f2f;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .time-slot {
+    padding: 0.75rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    color: #2f4f2f;
+    font-weight: 500;
+  }
+  
+  .time-slot:hover {
+    border-color: #3d7a3d;
+    background-color: rgba(61, 122, 61, 0.02);
+  }
+  
+  .time-slot.selected {
+    background-color: #3d7a3d;
+    color: white;
+    border-color: #3d7a3d;
+  }
+  
+  /* Book Button */
+  .book-appointment-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3d7a3d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+  }
+  
+  .book-appointment-btn:hover {
+    background-color: #2f4f2f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .appointment-container {
+      margin: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .appointment-container {
+      margin: 1rem;
+      padding: 1.5rem;
+    }
+  
+    .session-types {
+      flex-direction: column;
+    }
+  
+    .session-type {
+      padding: 0.875rem;
+    }
+  
+    .dates {
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+  
+    .date-card {
+      min-width: 120px;
+    }
+  
+    .slots-grid {
+      grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+      gap: 0.625rem;
+    }
+  
+    .time-slot {
+      padding: 0.625rem 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .appointment-container {
+      margin: 0.75rem;
+      padding: 1.25rem;
+    }
+  
+    .fee-section {
+      margin-bottom: 1.5rem;
+    }
+  
+    .nav-button {
+      width: 2rem;
+      height: 2rem;
+    }
+  
+    .slots-grid {
+      grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+      gap: 0.5rem;
+    }
+  
+    .time-slot {
+      padding: 0.5rem;
+      font-size: 0.85rem;
+    }
+  
+    .session-label {
+      font-size: 0.95rem;
+    }
+  
+    .session-duration {
+      font-size: 0.85rem;
+    }
+  
+    .day {
+      font-size: 0.95rem;
+    }
+  
+    .slots {
+      font-size: 0.85rem;
+    }
+  }
+  
+  
